@@ -6,7 +6,7 @@ async function getPricingDetails(param) {
   try {
     const query = `
         SELECT base_distance_in_km, km_price, fix_price 
-        FROM Pricing 
+        FROM public.Pricing 
         WHERE organization_id = $1 
         AND zone = $2 
         AND item_id = (
@@ -18,6 +18,7 @@ async function getPricingDetails(param) {
       zone,
       item_type,
     ]);
+    console.log(rows)
     return rows[0];
   } catch (error) {
     throw error;

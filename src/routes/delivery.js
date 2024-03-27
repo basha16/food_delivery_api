@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post("/cost/calculate", async (req, res) => {
   try {
-    const total_price = calculateDeliveryCost(req.body);
+    const total_price = await calculateDeliveryCost(req.body);
     res.json({ total_price });
   } catch (error) {
     console.error("Error calculating delivery cost:", error);
