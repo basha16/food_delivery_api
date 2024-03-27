@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const db = new Pool({
   user: 'asset_v84x_user',
-  host: 'dpg-cnkv5aud3nmc73bpndu0-a.oregon-postgres.render.com',
+  host: 'dpg-co19cuacn0vc73ee4650-a.oregon-postgres.render.com',
   database: 'asset_v84x',
   password: 'qLHuQV448bC3qbQFh0d5Y7XM0merQZTX',
   port: 5432,
