@@ -13,7 +13,7 @@ async function getPricingDetails(param) {
           SELECT id FROM Item WHERE type = $3
         )
       `;
-    const { rows } = await pool.query(query, [
+    const { rows } = await db.query(query, [
       organization_id,
       zone,
       item_type,
