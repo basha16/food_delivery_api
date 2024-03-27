@@ -18,7 +18,6 @@ async function getPricingDetails(param) {
       zone,
       item_type,
     ]);
-    console.log(rows)
     return rows[0];
   } catch (error) {
     throw error;
